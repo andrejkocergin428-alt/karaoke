@@ -29,7 +29,10 @@ export const fontsStyle = () => {
 						let fontWeight = fontFileName.split('-')[1] ? fontFileName.split('-')[1] : fontFileName;
 						if (fontWeight.toLowerCase() === 'thin') {
 							fontWeight = 100;
-						} else if (fontWeight.toLowerCase() === 'extralight') {
+						} else if (
+							fontWeight.toLowerCase() === 'extralight' ||
+							fontWeight.toLowerCase() === 'ultralight'
+						) {
 							fontWeight = 200;
 						} else if (fontWeight.toLowerCase() === 'light') {
 							fontWeight = 300;
